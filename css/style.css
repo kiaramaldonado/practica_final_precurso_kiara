@@ -58,7 +58,7 @@ header .container {
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 1.75em;
-    padding: 0em 1.25em;
+    padding: 0rem 1.25rem;
 }
 
 header nav.container>a {
@@ -93,6 +93,15 @@ header nav.container .menu a.active {
 }
 
 /* ------------------- FINAL DEL HEADER ----------------- */
+
+/* ------------------- INICIO DEL FOOTER ----------------- */
+
+footer .container {
+    padding: 0rem 1.25rem;
+    color: var(--secondaryColor);
+}
+
+/* ------------------- FINAL DEL FOOTER ----------------- */
 
 /* --------------------- MEDIAQUERIES ------------------- */
 
@@ -131,6 +140,10 @@ header nav.container .menu a.active {
 @media(min-width: 87.5rem) {
 
     header .container {
+        padding: 0em;
+    }
+
+    footer .container {
         padding: 0em;
     }
 
