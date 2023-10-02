@@ -127,3 +127,11 @@ header nav.container .menu a.active {
     }
 
 }
+
+@media(min-width: 87.5rem) {
+
+    header .container {
+        padding: 0em;
+    }
+
+}
