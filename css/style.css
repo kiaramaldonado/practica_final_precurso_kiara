@@ -61,7 +61,7 @@ header .container {
     padding: 0em 1.25em;
 }
 
-header nav.container a {
+header nav.container>a {
     display: inline-block;
     text-decoration: none;
     color: var(--mainColor);
@@ -84,6 +84,8 @@ header nav.container .menu li {
 header nav.container .menu a {
     display: inline-block;
     padding: 0.625rem 0rem;
+    text-decoration: none;
+    color: var(--mainColor);
 }
 
 header nav.container .menu a.active {
@@ -91,3 +93,37 @@ header nav.container .menu a.active {
 }
 
 /* ------------------- FINAL DEL HEADER ----------------- */
+
+/* --------------------- MEDIAQUERIES ------------------- */
+
+@media(min-width: 48rem) {
+
+    header nav.container #btn-menu {
+        display: none;
+    }
+
+    header nav.container .menu {
+        width: 80%;
+        order: 1;
+    }
+
+    header nav.container>a {
+        width: 20%;
+        order: 2;
+        text-align: right;
+    }
+
+    header nav.container .menu li {
+        text-align: left;
+        display: inline-block;
+    }
+
+    header nav .menu {
+        padding: 0;
+    }
+
+    header nav.container .menu a {
+        padding: 0rem calc(var(--space)*1.25) 0 0;
+    }
+
+}
