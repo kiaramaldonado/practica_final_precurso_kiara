@@ -121,7 +121,75 @@ footer .container {
 
 /* ------------------- FINAL DEL HERO ----------------- */
 
-/* ------------------- FINAL DEL FOOTER ----------------- */
+/* ------------------- INICIO PROJECTS ----------------- */
+
+/* ATAQUE A LOS SECTION */
+main section {
+    padding: var(--space) 1.25 rem;
+}
+
+main section h2 {
+    font-size: 3em;
+    padding-bottom: 2.5rem;
+}
+
+/* ATAQUE A LOS PROJECTS */
+
+main #projects .grid {
+    display: grid;
+    grid-gap: var(--space);
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+main #projects .grid article {
+    filter: grayscale(100%);
+    transition: 1s;
+    position: relative;
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
+main #projects .grid article:first-child {
+    background-image: url(../images/vase-wooden.jpg);
+    background-size: cover;
+    height: 50vh;
+    background-position: center center;
+    overflow: hidden;
+}
+
+main #projects .grid article:last-child {
+    background-image: url(../images/coo-coo-clock.png);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+main #projects .grid article:nth-child(2) {
+    background-image: url(../images/bottle-gradient-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+main #projects .grid article h3 {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 0.6rem;
+    font-size: 2em;
+    font-weight: 500;
+    transition: 1s;
+    opacity: 0;
+}
+
+main #projects .grid article:hover h3 {
+    left: 1.25rem;
+    opacity: 1;
+}
+
+/* ------------------- FINAL PROJECTS ----------------- */
 
 /* --------------------- MEDIAQUERIES ------------------- */
 
@@ -159,6 +227,17 @@ footer .container {
         max-width: 700px;
     }
 
+    main #projects .grid {
+        display: grid;
+        grid-gap: var(--space);
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main #projects .grid article:last-child {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
 }
 
 @media(min-width: 87.5rem) {
