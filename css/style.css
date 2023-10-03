@@ -200,6 +200,36 @@ main #projects .container a {
 
 /* ------------------- FINAL PROJECTS ----------------- */
 
+
+/* ------------------- INICIO EXPERTISE ----------------- */
+
+main #expertise .flex {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+main #expertise article {
+    text-align: center;
+}
+
+main #expertise article figure {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+main #expertise article h3 {
+    font-size: 2rem;
+    padding: var(--space) 0;
+}
+
+main #expertise article p {
+    color: var(--secondaryColor);
+    font-size: 1.25em;
+}
+
+/* ------------ FINAL DE EXPERTISE ---------------------- */
+
 /* --------------------- MEDIAQUERIES ------------------- */
 
 @media(min-width: 48rem) {
