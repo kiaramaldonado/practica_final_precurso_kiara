@@ -230,6 +230,60 @@ main #expertise article p {
 
 /* ------------ FINAL DE EXPERTISE ---------------------- */
 
+
+/* ------------ INICIO DEL PRICE ---------------------- */
+
+main #price .flex {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space)*2);
+}
+
+main #price .flex article {
+    text-align: center;
+}
+
+main #price .flex article h3 {
+    font-size: 2em;
+}
+
+main #price .flex article .price {
+    font-size: 3em;
+    margin: var(--space) 0;
+}
+
+main #price .flex article hr {
+    border: 0.5px solid var(--secondaryColor);
+    margin-bottom: var(--space);
+}
+
+main #price .flex article li {
+    margin-bottom: 0.625rem;
+    font-size: 1.5rem;
+
+    & span {
+        color: var(--secondaryColor);
+    }
+}
+
+.buy {
+    background-color: var(--colorButton);
+    display: inline-block;
+    padding: var(--space);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--mainColor);
+    transition: 0.5s;
+
+    &:hover {
+        background-color: var(--secondaryColor);
+    }
+}
+
+
+/* ----------- FINAL DE PRICE -------------- */
+
+
 /* --------------------- MEDIAQUERIES ------------------- */
 
 @media(min-width: 48rem) {
