@@ -231,6 +231,34 @@ main #expertise article p {
 /* ------------ FINAL DE EXPERTISE ---------------------- */
 
 
+/* -------- INICIO DEL NEWS */
+
+main #news .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+}
+
+main #news .flex article a {
+    display: block;
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+main #news .flex article a p {
+    color: var(--secondaryColor)
+}
+
+main #news .flex article a h3 {
+    font-size: 2rem;
+}
+
+
+
+/* --------- FINAL DEL NEWS ----------------------- */
+
+
+
 /* ------------ INICIO DEL PRICE ---------------------- */
 
 main #price .flex {
