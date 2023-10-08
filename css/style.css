@@ -311,6 +311,56 @@ main #price .flex article li {
 
 /* ----------- FINAL DE PRICE -------------- */
 
+/* ------------ INICIO DEL TEAM -------------- */
+
+main #team .container h2 {
+    padding-bottom: 6.25rem;
+}
+
+main #team .container .flex article figure {
+    max-width: 350px;
+    margin: 0 auto;
+    transform: rotateZ(45deg);
+    overflow: hidden;
+    transition: 1s;
+}
+
+main #team .container .flex figure:hover {
+    transform: rotateZ(0deg);
+}
+
+main #team .container .flex article figure img {
+    transform: rotateZ(-45deg) scale(1.7);
+    transition: 1s;
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
+main #team .container .flex figure img:hover {
+    transform: rotateZ(0deg);
+}
+
+main #team .container .flex article .member {
+    text-align: center;
+    padding: 3.75rem 0rem 4.375rem 0rem;
+    margin: 1.25rem 0rem;
+}
+
+main #team .container .flex article .member h3 {
+    font-size: 1.5em;
+    color: var(--mainColor);
+}
+
+main #team .container .flex article .member p {
+    font-size: 1.2em;
+    color: var(--secondaryColor);
+    padding: 0.625rem 0rem;
+}
+
+/* ----------------- FIN DEL TEAM ---------------------- */
+
 
 /* --------------------- MEDIAQUERIES ------------------- */
 
@@ -360,6 +410,48 @@ main #price .flex article li {
         grid-row: 1/3;
     }
 
+    main #team .container {
+        padding: 0rem 1.25rem;
+    }
+
+    main #team .container h2 {
+        margin-top: 6.25rem;
+    }
+
+    main #team .container .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main #team .container .flex article {
+        width: 35%;
+    }
+
+    main #team .container .flex article figure {
+        max-width: 230px;
+        margin: 0 auto;
+        transform: rotateZ(45deg);
+        overflow: hidden;
+        transition: 1s;
+    }
+
+    main #team .container .flex article .member {
+        text-align: center;
+        padding: 3.75rem 0rem;
+        margin: 0rem;
+    }
+
+    main #team .container .flex article .member h3 {
+        font-size: 1.5em;
+        color: var(--mainColor);
+    }
+
+    main #team .container .flex article .member p {
+        font-size: 1.2em;
+        color: var(--secondaryColor);
+    }
 }
 
 @media(min-width: 87.5rem) {
@@ -374,6 +466,14 @@ main #price .flex article li {
 
     main #projects .container a {
         text-align: left;
+    }
+
+    main #team .container {
+        padding: 0rem 1.25rem;
+    }
+
+    main #team .container .flex article {
+        width: 25%;
     }
 
 }
