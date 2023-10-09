@@ -361,6 +361,33 @@ main #team .container .flex article .member p {
 
 /* ----------------- FIN DEL TEAM ---------------------- */
 
+/* ----------------- INICIO DEL WORK ---------------------- */
+
+main #work>p {
+    padding-top: 20px;
+    margin: 5px 10px;
+}
+
+main #work>div {
+    width: 100%;
+    display: flex;
+}
+
+main #work>div div {
+    color: var(--secondaryColor);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #work>div div:hover {
+    color: var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+}
+
+
+/* ----------------- FINAL DEL WORK ---------------------- */
 
 /* --------------------- MEDIAQUERIES ------------------- */
 
