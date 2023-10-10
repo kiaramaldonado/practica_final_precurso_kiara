@@ -314,7 +314,7 @@ main #price .flex article li {
 /* ------------ INICIO DEL TEAM -------------- */
 
 main #team .container h2 {
-    padding-bottom: 6.25rem;
+    padding-bottom: 6.5rem;
 }
 
 main #team .container .flex article figure {
@@ -323,29 +323,26 @@ main #team .container .flex article figure {
     transform: rotateZ(45deg);
     overflow: hidden;
     transition: 1s;
-}
 
-main #team .container .flex figure:hover {
-    transform: rotateZ(0deg);
+    &:hover {
+        transform: rotateZ(0deg);
+    }
 }
 
 main #team .container .flex article figure img {
-    transform: rotateZ(-45deg) scale(1.7);
+    transform: rotateZ(-45deg) scale(2);
     transition: 1s;
 
     &:hover {
         filter: grayscale(0%);
+        transform: rotateZ(0deg);
     }
-}
-
-main #team .container .flex figure img:hover {
-    transform: rotateZ(0deg);
 }
 
 main #team .container .flex article .member {
     text-align: center;
-    padding: 3.75rem 0rem 4.375rem 0rem;
-    margin: 1.25rem 0rem;
+    padding: 3.75rem 0rem 3.75rem 0rem;
+    margin: 1.5rem 0rem;
 }
 
 main #team .container .flex article .member h3 {
@@ -354,9 +351,9 @@ main #team .container .flex article .member h3 {
 }
 
 main #team .container .flex article .member p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--secondaryColor);
-    padding: 0.625rem 0rem;
+    padding: 0.5rem 0rem;
 }
 
 /* ----------------- FIN DEL TEAM ---------------------- */
